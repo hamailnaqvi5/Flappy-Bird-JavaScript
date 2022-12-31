@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+div {
+    animation-name: game;
+    animation-duration: 5s;
+  }
+  
+  @keyframes game {
+    0%   {background-color: red;}
+    25%  {background-color: yellow;}
+    50%  {background-color: blue;}
+    100% {background-color: green;}
+  }
+body {
+    height: 100vh;
+    width: 100vw;
+} 
+.background {
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(65, 192, 34);
+}
+.bird {
+    height: 100px;
+    width: 160px;
+    position: fixed;
+    top: 40vh;
+    left: 30vw;
+    z-index: 100;
+} 
+.pipe {
+    position: fixed;
+    top: 40vh;
+    left: 100vw;
+    height: 70vh;
+    width: 6vw;
+    background-color: rgb(0, 0, 0);
+}
+.message {
+    position: fixed;
+    z-index: 10;
+    height: 10vh;
+    font-size: 10vh;
+    font-weight: 100;
+    color: rgb(252, 252, 252);
+    top: 12vh;
+    left: 20vw;
+    text-align: center;
+}
+.score {
+    position: fixed;
+    z-index: 10;
+    height: 10vh;
+    font-size: 10vh;
+    font-weight: 100;
+    color: rgb(248, 247, 245);
+    top: 0;
+    left: 0;
+}
+.score_val {
+    color: rgb(253, 253, 252);
+}
